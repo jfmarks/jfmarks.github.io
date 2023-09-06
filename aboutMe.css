@@ -1,11 +1,16 @@
 .column {
   float: left;
   width: 50%;
+  background-color:darkslategrey;
+  color:beige;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
+}
+.edge {
+  background-color:darkslategrey;
+  color:beige;
 }
