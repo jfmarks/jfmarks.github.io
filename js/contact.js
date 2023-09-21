@@ -1,4 +1,4 @@
-emailjs.init('YOUR_PUBLIC_KEY');
+emailjs.init('-bb8RCJ4HP6XEY_lW');
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -13,18 +13,20 @@ document.addEventListener("DOMContentLoaded", function() {
       
       if (ValidatePhone(user_phone) && validateEmailAddress(user_email)) {
         alert("submitted");
-        return true;
+        var SUCCESS = true;
       } else {
         alert("not submitted 🙅‍♂️");
         var SUCCESS = false;
       }
+      console.log(SUCCESS);
       if (SUCCESS) {
-        emailjs.sendForm('contact_service', 'contactform', this)
-        .then(function() {
-            console.log('SUCCESS!');
-        }, function(error) {
-            console.log('FAILED...', error);
-        });
+        emailjs.send("Gmail_contact_service","template_zbd123d",{
+          user_fname: user_fname,
+          message: user_message,
+          user_email: user_email,
+          user_phone: user_phone,
+          user_lname: user_lname,
+          });
       }
     });
   });
