@@ -9,6 +9,7 @@
 	<!--css-->
 	<link rel="stylesheet" href="/css/style.css">
     <script src="/js/contact.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body>
 	<ul class="navBar">
@@ -35,10 +36,12 @@
             <div class="form-group">
                 <label for="user_email">Email:</label>
                 <input id="user_email" type="email" class="form-control" required>
+                <span class="email_error" id="email_error">Please enter your email in a Jacob@domain.domain format</span>
             </div>
             <div class="form-group">
                 <label for="user_phone">Phone Number:</label>
                 <input id="user_phone" type="text" class="form-control" required>
+                <span class="phone_error" id="phone_error">Please enter your phone number in a ###-###-#### format</span>
             </div>
             <div class="form-group" >
                 <label for="user_message">Message:</label>
@@ -46,6 +49,7 @@
                 <textarea id="user_message" type="text" class="form-control messageBox" required></textarea>
             </div>
             <input type="submit" id="go" class="button" value="Submit">
+            <span class="success" id="success">Thank you for sending a message :D</span>
         </form>
     </div>
 </body>

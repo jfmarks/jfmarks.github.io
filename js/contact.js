@@ -12,10 +12,22 @@ document.addEventListener("DOMContentLoaded", function() {
       var user_message = document.querySelector("#user_message").value;
       
       if (ValidatePhone(user_phone) && validateEmailAddress(user_email)) {
-        alert("submitted");
+        document.getElementById("phone_error").style.display = "none";
+        document.getElementById("email_error").style.display = "none";
+        document.getElementById("success").style.display = "block";
+        console.log("success");
         var SUCCESS = true;
       } else {
-        alert("not submitted 🙅‍♂️");
+        if (validateEmailAddress(user_email) == false) {
+          document.getElementById("email_error").style.display = "block";
+        } else {
+          document.getElementById("email_error").style.display = "none";
+        }
+        if (ValidatePhone(user_phone) == false) {
+          document.getElementById("phone_error").style.display = "block";
+        } else {
+          document.getElementById("phone_error").style.display = "none";
+        }
         var SUCCESS = false;
       }
       console.log(SUCCESS);

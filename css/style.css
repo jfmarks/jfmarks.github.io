@@ -64,4 +64,15 @@ ul.navBar {
   height: 75px;
   width: 300px;
 }
-
+.email_error {
+  display: none;
+  color: red;
+}
+.phone_error {
+  display: none;
+  color: red;
+}
+.success {
+  display: none;
+  color: green;
+}
