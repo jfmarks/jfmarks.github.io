@@ -42,8 +42,6 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   });
-  
-
 function validateEmailAddress(emailAddress) {
   var domainPattern = /^[a-zA-Z0-9.-]+(\.[a-zA-Z]{2,})+$/;
   var atSymbol = emailAddress.indexOf("@");
