@@ -44,18 +44,20 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 function validateEmailAddress(emailAddress) {
   var domainPattern = /^[a-zA-Z0-9.-]+(\.[a-zA-Z]{2,})+$/;
+  var namePattern = /^[a-zA-Z0-9.-]+$/;
   var atSymbol = emailAddress.indexOf("@");
   var dotSymbol = emailAddress.lastIndexOf(".");
   var domain = emailAddress.substring(atSymbol + 1, emailAddress.length);
   //var TLD = emailAddress.substring(dotSymbol + 1, emailAddress.length);
   var validDomain = domainPattern.test(domain);
-  console.log(domain + " " + toString(validDomain));
+  var validName = namePattern.test(emailAddress.substring(0, atSymbol));
 
     if ((atSymbol != -1) &&
         (atSymbol != 0) &&
         (dotSymbol != -1) &&
         (dotSymbol != 0) &&
         validDomain &&
+        validName &&
         (dotSymbol > atSymbol + 1) &&
         (emailAddress.length > dotSymbol + 1) ) {
         return true;
