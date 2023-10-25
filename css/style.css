@@ -5,6 +5,14 @@ body {
   justify-content: center;
   align-content: center;
 }
+img {
+  margin-left: auto;
+  margin-right: auto;
+}
+embed {
+  margin-left: auto;
+  margin-right: auto;
+}
 .column {
   float: left;
   width: 50% ;
