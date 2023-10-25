@@ -6,10 +6,12 @@ body {
   align-content: center;
 }
 img {
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
 embed {
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
