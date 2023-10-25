@@ -1,6 +1,5 @@
 body {
   background-color: #222323;
-	font: 15px cursive;
 	color:white;
 	padding-inline: 10px;
 }
@@ -11,7 +10,6 @@ body {
   color: white;
   text-indent: 10px;
   min-height: 225px;
-  font: 15px cursive;
 }
 .row {
   width: 100%;
@@ -44,6 +42,7 @@ ul.navBar {
 }
 
 .navBar li {
+  width: 12.5%;
   list-style-type: none;
   float: left;
 }
