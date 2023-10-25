@@ -16,9 +16,9 @@ body {
   display: table;
   clear: both;
   background-color: #222323;
-  font: 15px cursive;
   color:white;
   padding-inline: 10px;
+  justify-content: center;
 }
 a:link.normalLink, a:visited.normalLink {
   background-color: #087908;
@@ -27,6 +27,7 @@ a:link.normalLink, a:visited.normalLink {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  justify-content: center;
 }
 
 ul.navBar {
@@ -39,10 +40,11 @@ ul.navBar {
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  justify-content: center;
 }
 
 .navBar li {
-  width: 12.5%;
+  width: 18.5%;
   list-style-type: none;
   float: left;
 }
