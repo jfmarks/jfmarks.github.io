@@ -2,6 +2,7 @@ body {
   background-color: #222323;
 	color:white;
 	padding-inline: 10px;
+  text-align: center;
   justify-content: center;
   align-content: center;
 }
@@ -15,6 +16,31 @@ embed {
   margin-left: auto;
   margin-right: auto;
 }
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 0 0 0;
+}
+.footer a {
+  color: rgb(97, 97, 168);
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  box-sizing: border-box;
+}
+.footer image {
+  display: inline-block;
+  box-sizing: border-box;
+}
 .column {
   float: left;
   width: 50% ;
@@ -22,8 +48,16 @@ embed {
   color: white;
   text-indent: 10px;
   min-height: 225px;
-  justify-content: center;
-  align-content: center;
+  text-align: left;
+  border:#087908;
+  border-radius: 5px;
+}
+.favorites {
+  text-align: center;
+}
+.favoriteLI {
+  display: inline-block;
+  text-align: left;
 }
 .row {
   width: 100%;
@@ -32,8 +66,7 @@ embed {
   background-color: #222323;
   color:white;
   padding-inline: 10px;
-  justify-content: center;
-  align-content: center;
+  box-sizing: border-box;
 }
 a:link.normalLink, a:visited.normalLink {
   background-color: #087908;
@@ -61,7 +94,7 @@ ul.navBar {
 }
 
 .navBar li {
-  width: 16.5%;
+  width: 20%;
   list-style-type: none;
   float: left;
 }
