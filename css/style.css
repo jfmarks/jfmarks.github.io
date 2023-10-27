@@ -51,6 +51,7 @@ footer {
   text-align: left;
   border:#087908;
   border-radius: 5px;
+  overflow:auto;
 }
 .favorites {
   text-align: center;
@@ -60,6 +61,7 @@ footer {
   text-align: left;
 }
 .row {
+  display: grid;
   width: 100%;
   display: table;
   clear: both;
