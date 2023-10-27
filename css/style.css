@@ -1,16 +1,11 @@
 body {
   background-color: #222323;
 	color:white;
-	padding-inline: 10px;
   text-align: center;
   justify-content: center;
   align-content: center;
 }
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 embed {
   display: block;
   margin-left: auto;
@@ -37,10 +32,6 @@ footer {
   padding-right: 100px;
   box-sizing: border-box;
 }
-.footer image {
-  display: inline-block;
-  box-sizing: border-box;
-}
 .column {
   float: left;
   width: 50% ;
@@ -49,9 +40,6 @@ footer {
   text-indent: 10px;
   min-height: 225px;
   text-align: left;
-  border:#087908;
-  border-radius: 5px;
-  overflow:auto;
 }
 .favorites {
   text-align: center;
@@ -61,7 +49,6 @@ footer {
   text-align: left;
 }
 .row {
-  display: grid;
   width: 100%;
   display: table;
   clear: both;
@@ -69,6 +56,12 @@ footer {
   color:white;
   padding-inline: 10px;
   box-sizing: border-box;
+}
+.cross-stitch {
+  width: 65%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 a:link.normalLink, a:visited.normalLink {
   background-color: #087908;
@@ -112,20 +105,4 @@ ul.navBar {
 }
 .navBar .active {
   background-color: #087908;
-}
-.messageBox {
-  height: 75px;
-  width: 300px;
-}
-.email_error {
-  display: none;
-  color: red;
-}
-.phone_error {
-  display: none;
-  color: red;
-}
-.success {
-  display: none;
-  color: green;
 }
